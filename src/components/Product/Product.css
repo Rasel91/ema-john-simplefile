@@ -4,9 +4,36 @@
     height: 510px;
     border: 2px solid rgb(70, 70, 1);
     margin: 10px;
-    border-radius: 5px;
+    border-radius: 8px;
+    position: relative;
 }
+
+
 .product img{
     width: 286px;
     height: 286px;
+}
+
+.product-info{
+ padding-left: 14px;
+ padding-right: 14px;
+}
+
+.product-info p{
+ margin: 0;
+}
+
+.button-cart{
+    width: 100%;
+    background: #FFE0B3;
+    border: none;
+    border-radius: 0px 0px 8px 8px;
+    position: absolute;
+    bottom: 0;
+    font-weight: bold;
+}
+.button-cart:hover{
+    color: aliceblue;
+    background-color: rgb(145, 87, 12);
+   
 }
