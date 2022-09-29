@@ -1,5 +1,7 @@
 import React from 'react';
-import './Product.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import './Product.css';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 const Product = ({product,handleAddToCart}) => {
     // const {product,handleAddToCart}=props;
     const {name,price,img, seller, ratings}= product;
@@ -16,6 +18,7 @@ const Product = ({product,handleAddToCart}) => {
            {/* <button onClick={()=>props.handleAddToCart(props.product)} className='button-cart'> */}
            <button onClick={()=>handleAddToCart(product)} className='button-cart'>
             <p>Add to Cart</p>
+            <FontAwesomeIcon icon={faCoffee}></FontAwesomeIcon>
            </button>
         </div>
     );
